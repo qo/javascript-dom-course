@@ -10,6 +10,8 @@ Lesson 4: Traversing the DOM
 
 Lesson 5: Event Listeners 
 
+Lesson 6: Event Listeners, Traversing the DOM
+
 
 
 
