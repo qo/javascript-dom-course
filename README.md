@@ -8,5 +8,8 @@ Lesson 3: Creating Elements, Adding Elements, Modifying Text, Modifying Elements
 
 Lesson 4: Traversing the DOM
 
+Lesson 5: Event Listeners 
+
+
 
 
