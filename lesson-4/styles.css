@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #221f22;
+}
+
+#fav-movies-container {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #2d2a2e;
+    color: #f4f1e8;
+    text-align: center;
+}
+
+#fav-movies-content {
+    padding: 20px;
+}
+
+#fav-movies-title-container {
+    margin-bottom: 15px;
+}
+
+#fav-movies-title {
+    padding: 10px;
+}
+
+#fav-movies-list {
+    list-style-type: none;
+}
+
+.fav-movies-list-item {
+    background-color: #403e41;
+    margin-bottom: 5px;
+}
+
+.fav-movies-list-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.fav-movies-list-item > p {
+    padding: 10px;
+}
