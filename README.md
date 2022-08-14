@@ -12,6 +12,6 @@ Lesson 5: Event Listeners
 
 Lesson 6: Event Listeners, Traversing the DOM
 
-
+Lesson 7: Event Propagation (Event Capturing, Event Bubbling, e.target, e.stopPropagation(), e.preventDefault())
 
 
