@@ -1,0 +1,81 @@
+:root {
+    --white: #eee;
+    --black: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("https://johnsoncenter.org/wp-content/uploads/2021/03/Fundraising-Misconceptions-1180x670.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#faq {
+    width: 35%;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+#faq-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.topic {
+    width: 100%;
+}
+
+.question {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--black);
+    transition: font-size 0.5s;
+}
+
+.question::after {
+    position: relative;
+    content: "+";
+    float: right;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.answer {
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.topic.revealed .question {
+    font-size: 1rem;
+    transition: font-size 0.5s;
+}
+
+.topic.revealed .question::after {
+    content: "-";
+}
+
+.topic.revealed .answer {
+    max-height: 300px;
+    transition: max-height 0.5s ease-in-out;
+}
