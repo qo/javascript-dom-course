@@ -14,4 +14,5 @@ Lesson 6: Event Listeners, Traversing the DOM
 
 Lesson 7: Event Propagation (Event Capturing, Event Bubbling, e.target, e.stopPropagation(), e.preventDefault())
 
+Lesson 8: Event Delegation
 
