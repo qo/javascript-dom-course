@@ -1,0 +1,111 @@
+:root {
+    --white: #eee;
+    --black: #222;
+    --green: #2E6F2A;
+    --yellow: #C7B92E;
+    --red: #9D3624;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#title {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#add-task, .task {
+    margin: 10px auto;
+    width: 500px;
+    height: 75px;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.task {
+    animation-name: add-task;
+    animation-duration: 0.7s;
+}
+
+input, button {
+    background: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-name {
+    border-color: var(--black);
+    width: 80%;
+}
+
+#add-task-button {
+    color: var(--green);
+    border-color: var(--green);
+    width: 20%;
+}
+
+#add-task-button:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.task-name {
+    margin: auto;
+    width: 60%;
+}
+
+.cross-out-button, .delete-button {
+    width: 20%;
+}
+
+.cross-out-button {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.cross-out-button:hover {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.delete-button {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+.delete-button:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+@keyframes add-task {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
