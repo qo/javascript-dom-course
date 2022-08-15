@@ -1,0 +1,52 @@
+:root {
+    --white: #eee;
+    --wood: #9d4f39;
+    --shadow: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url("https://images.eq3.com/image-service/99243a9e-4722-49c5-8267-52c806b97fec/black-floating-clock-on-home-office-wall_COMPRESSED.jpg");
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    width: 600px;
+    height: 200px;
+    background-color: var(--wood);
+    color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px var(--shadow);
+}
+
+time {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--wood);
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 20px;
+}
